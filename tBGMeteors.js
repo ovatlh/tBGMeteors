@@ -9,7 +9,7 @@ var tBGMeteors=tBGMeteors||(function () {
     return number.toFixed(decimals);
   }
 
-  function init({
+  function fnInit({
     selector = ".t-bg-meteors",
     durationSecMin = 3,
     durationSecMax = 13,
@@ -32,12 +32,12 @@ var tBGMeteors=tBGMeteors||(function () {
       const meteor_HTML = meteorList_HTML.join("");
       container_DOM.innerHTML = meteor_HTML;
     } catch (e) {
-      console.error({ error: `init`, e });
+      console.error({ error: `fnInit`, e });
     }
   }
 
   return {
     VERSION,
-    init,
+    fnInit,
   }
 })();
